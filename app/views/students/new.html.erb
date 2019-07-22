@@ -1,8 +1,8 @@
 <h1>Add a new student</h1>
 <%= form_for ("/students") do  %>
   <%= label_tag('student[first_name]',"First Name") %>
-  <%= f.text_field :first_name %>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
+  <%= text_field_tag ('student[first_name]') %>
+  <%= label_tag('student[last_name]',"Last Name") %>
+  <%= text_field_tag ('student[last_name]') %>
   <%= f.submit %>
 <% end %>
