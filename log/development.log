@@ -706,3 +706,14 @@ Processing by StudentsController#edit as HTML
 Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.1ms)
 
 
+Started PATCH "/students/6" for 65.207.79.74 at 2019-07-22 21:14:34 +0000
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AgQERmDy8rV6a131uUZSFC66Y3bkAZUM77E9Gy3ZUOrrtk8/3VN+uYFQHYuXumJffZ/Q+wpgwpndHQuwbhIrjA==", "student"=>{"first_name"=>"Nicki", "last_name"=>"James"}, "commit"=>"Update Student", "id"=>"6"}
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "students" SET "first_name" = ?, "last_name" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["first_name", nil], ["last_name", nil], ["updated_at", "2019-07-22 21:14:34.738636"], ["id", 6]]
+  [1m[35m (90.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.165.109:56614/students/6
+Completed 302 Found in 97ms (ActiveRecord: 92.2ms)
+
+
