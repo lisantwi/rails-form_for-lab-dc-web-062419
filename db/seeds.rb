@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Student.destroy_all
-lisa = Students.find_or_create(first_name: "Lisa", last_name:"Antwi Adjei")
-beyonce = Students.find_or_create(first_name: "Beyonce", last_name:"Knowles")
-mariah = Students.find_or_create(first_name: "Mariah", last_name:"Carey")
-nicki = Students.find_or_create(first_name:"Nicki", last_name: "Minaj")
+lisa = Student.find_or_create(first_name: "Lisa", last_name:"Antwi Adjei")
+beyonce = Student.find_or_create(first_name: "Beyonce", last_name:"Knowles")
+mariah = Student.find_or_create(first_name: "Mariah", last_name:"Carey")
+nicki = Student.find_or_create(first_name:"Nicki", last_name: "Minaj")
