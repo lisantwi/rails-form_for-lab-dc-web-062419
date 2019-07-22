@@ -295,3 +295,21 @@ rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
   [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."first_name" = ? AND "students"."last_name" = ? LIMIT ?[0m  [["first_name", "Lisa"], ["last_name", "Antwi Adjei"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Lisa"], ["last_name", "Antwi Adjei"], ["created_at", "2019-07-22 19:32:02.350843"], ["updated_at", "2019-07-22 19:32:02.350843"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."first_name" = ? AND "students"."last_name" = ? LIMIT ?[0m  [["first_name", "Beyonce"], ["last_name", "Knowles"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Beyonce"], ["last_name", "Knowles"], ["created_at", "2019-07-22 19:32:02.356221"], ["updated_at", "2019-07-22 19:32:02.356221"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."first_name" = ? AND "students"."last_name" = ? LIMIT ?[0m  [["first_name", "Mariah"], ["last_name", "Carey"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mariah"], ["last_name", "Carey"], ["created_at", "2019-07-22 19:32:02.362666"], ["updated_at", "2019-07-22 19:32:02.362666"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."first_name" = ? AND "students"."last_name" = ? LIMIT ?[0m  [["first_name", "Nicki"], ["last_name", "Minaj"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Nicki"], ["last_name", "Minaj"], ["created_at", "2019-07-22 19:32:02.368400"], ["updated_at", "2019-07-22 19:32:02.368400"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
