@@ -873,3 +873,58 @@ Processing by StudentsController#show as HTML
 Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/students/4" for 65.207.79.74 at 2019-07-22 21:18:57 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/3" for 65.207.79.74 at 2019-07-22 21:19:01 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/3/edit" for 65.207.79.74 at 2019-07-22 21:19:06 +0000
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/4/edit" for 65.207.79.74 at 2019-07-22 21:19:10 +0000
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/students/4" for 65.207.79.74 at 2019-07-22 21:19:16 +0000
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wG7TjA/5ovNX1b3rJE9M26XsL6/nsZ9fhlMpPR25mUQp3Jj1slgu/6zu/ZUKs3yQ9smcIgnQyMq0/x+WXnLiIg==", "student"=>{"first_name"=>"Nicki", "last_name"=>"Minaj"}, "commit"=>"Update Student", "id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.165.109:56614/students/4
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/students/4" for 65.207.79.74 at 2019-07-22 21:19:16 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
